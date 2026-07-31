@@ -3,115 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parth Patel | TheParthLogix</title>
-
+    <title>Parth Patel | Faculty of EC & ICT Engineering</title>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <div class="container">
-        <h1>Parth Patel</h1>
-        <p>Technology Simplified</p>
-
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </div>
-</header>
-
-<section id="home" class="hero">
-    <h2>Hello, I'm Parth Patel</h2>
-
-    <p>
-        Lecturer • Web Developer • AI Enthusiast • Networking • Cyber Security
-    </p>
-
-    <button>Explore My Work</button>
-</section>
-
-<section id="about">
-    <h2>About Me</h2>
-
-    <p>
-        Welcome to my personal website.
-        I create educational content on AI, Web Development,
-        Networking, Programming, Cyber Security, and Electronics.
-    </p>
-</section>
-
-<section id="skills">
-    <h2>Skills</h2>
-
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>Networking</li>
-        <li>Cyber Security</li>
-        <li>Artificial Intelligence</li>
-    </ul>
-</section>
-
-<section id="projects">
-    <h2>Projects</h2>
-
-    <div class="project">
-        <h3>AI Chatbot</h3>
-        <p>Interactive chatbot using HTML, CSS, JavaScript and AI.</p>
-    </div>
-
-    <div class="project">
-        <h3>Portfolio Website</h3>
-        <p>Responsive website hosted on GitHub Pages.</p>
-    </div>
-</section>
-
-<section id="contact">
-    <h2>Contact Me</h2>
-
-    <p>Email: your@email.com</p>
-    <p>GitHub: github.com/yourusername</p>
-</section>
-
-<!-- Chatbot -->
-<div id="chatbot">
-
-    <button id="chat-toggle">💬</button>
-
-    <div id="chat-box">
-
-        <div id="chat-header">
-            AI Assistant
+    <!-- Header / Hero Section -->
+    <header class="faculty-hero">
+        <div class="hero-container">
+            <div class="profile-card">
+                <div class="profile-avatar">
+                    <i class="fa-solid fa-user-gear"></i>
+                </div>
+                <div class="profile-info">
+                    <h1>Parth Patel</h1>
+                    <h2>Faculty of EC & ICT Engineering</h2>
+                    <p class="tagline"><i class="fa-solid fa-microchip"></i> VLSI Design | Embedded Systems | Communication Networks</p>
+                    <div class="quick-badges">
+                        <span class="badge"><i class="fa-solid fa-graduation-cap"></i> EC Dept.</span>
+                        <span class="badge"><i class="fa-solid fa-network-wired"></i> ICT Dept.</span>
+                        <span class="badge"><i class="fa-solid fa-door-open"></i> Office: EC-204</span>
+                    </div>
+                </div>
+            </div>
         </div>
+    </header>
 
-        <div id="chat-messages">
-            <div class="bot">
-                Hello 👋 I'm your AI assistant. Ask me anything about Parth Patel or his work.
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="info-section">
+            <h3><i class="fa-solid fa-book-open"></i> Academic Overview</h3>
+            <p>Welcome to my official academic portal. Here you can find details regarding my teaching modules, research projects in Electronics, Communication, and Information Tech, as well as office hour availability.</p>
+        </section>
+    </main>
+
+    <!-- Floating Chatbot Button -->
+    <button id="chat-launcher" class="chat-launcher" aria-label="Open Academic Assistant">
+        <i class="fa-solid fa-microchip"></i>
+    </button>
+
+    <!-- Chatbot Window -->
+    <div id="chat-window" class="chat-window hidden">
+        <!-- Chat Header -->
+        <div class="chat-header">
+            <div class="bot-info">
+                <div class="avatar-container">
+                    <i class="fa-solid fa-robot bot-avatar-icon"></i>
+                    <span class="online-indicator"></span>
+                </div>
+                <div class="bot-details">
+                    <span class="bot-name">EC-ICT Assistant</span>
+                    <span class="bot-status">Parth Patel's Virtual Bot</span>
+                </div>
+            </div>
+            <div class="header-actions">
+                <button id="clear-chat" title="Clear Chat" aria-label="Clear Chat History">
+                    <i class="fa-solid fa-trash-can"></i>
+                </button>
+                <button id="close-chat" title="Close Window" aria-label="Close Chat Window">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
             </div>
         </div>
 
-        <div id="chat-input">
+        <!-- Chat Messages Container -->
+        <div id="chat-messages" class="chat-messages"></div>
 
-            <input
-                type="text"
-                id="userInput"
-                placeholder="Type your message...">
-
-            <button id="sendBtn">Send</button>
-
+        <!-- Typing Indicator -->
+        <div id="typing-indicator" class="typing-indicator hidden">
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <span class="typing-text">Assistant is processing...</span>
         </div>
 
+        <!-- Input Area -->
+        <form id="chat-form" class="chat-input-area">
+            <input type="text" id="user-input" placeholder="Ask about EC/ICT subjects, office hours..." autocomplete="off" required>
+            <button type="submit" id="send-btn" aria-label="Send Message">
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </form>
     </div>
 
-</div>
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
