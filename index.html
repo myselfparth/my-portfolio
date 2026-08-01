@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prof. Parth Patel | EC & ICT Engineering</title>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Ambient Circuit Grid & Glow Background -->
+    <div class="circuit-bg">
+        <div class="grid-overlay"></div>
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+    </div>
+
+    <!-- Header / Hero Section -->
+    <header class="faculty-hero">
+        <div class="hero-container">
+            <div class="profile-card 3d-card">
+                <div class="profile-avatar-container">
+                    <img src="pdp.jpeg" alt="Parth Patel" class="profile-img">
+                    <span class="status-ring"></span>
+                </div>
+                <div class="profile-info">
+                    <h1>Parth Patel</h1>
+                    <h2>Faculty of EC & ICT Engineering</h2>
+                    <p class="tagline">
+                        <i class="fa-solid fa-microchip"></i> Technocrat & Educator 
+                    </p>
+                    <div class="quick-badges">
+                        <span class="badge hover-badge"><i class="fa-solid fa-graduation-cap"></i> Government Polytechnic for Girls, Surat </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+<!-- Include FontAwesome for EC & ICT Icons (Paste in your <head> if not already added) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- 3D Cyber Banner Styles -->
+<style>
+    .ec-ict-marquee-container {
+        width: 100%;
+        background: linear-gradient(135deg, #0b132b, #1c2541);
+        border-top: 1px solid rgba(0, 180, 216, 0.3);
+        border-bottom: 2px solid #00b4d8;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.1);
+        padding: 10px 0;
+        overflow: hidden;
+        margin: 15px 0;
+    }
+    
+    .ec-ict-marquee-container marquee {
+        display: flex;
+        align-items: center;
+        font-family: 'Segoe UI', Roboto, sans-serif;
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: #f8fafc;
+        letter-spacing: 0.5px;
+    }
+    
+    .marquee-content {
+        display: inline-flex;
+        align-items: center;
+        gap: 25px;
+    }
+    
+    .marquee-icon {
+        color: #00b4d8;
+        font-size: 1.1rem;
+        filter: drop-shadow(0 0 5px rgba(0, 180, 216, 0.6));
+    }
+    
+    .marquee-quote {
+        background: linear-gradient(90deg, #ffffff, #00b4d8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-style: italic;
+    }
+    
+    .marquee-separator {
+        color: rgba(255, 255, 255, 0.2);
+        margin: 0 10px;
+    }
+</style>
+
+<!-- Banner Code (Slides from Left to Right) -->
+<div class="ec-ict-marquee-container">
+    <marquee direction="left" behavior="scroll" scrollamount="9" onmouseover="this.stop();" onmouseout="this.start();">
+        <div class="marquee-content">
+            <i class="fa-solid fa-microchip marquee-icon"></i>
+            <i class="fa-solid fa-quote-left marquee-icon"></i>
+            <span class="marquee-quote">"Empowering Minds, Engineering the Future."</span>
+            <i class="fa-solid fa-quote-right marquee-icon"></i>
+            <span class="marquee-separator">•</span>
+            
+            <i class="fa-solid fa-network-wired marquee-icon"></i>
+            <i class="fa-solid fa-quote-left marquee-icon"></i>
+            <span class="marquee-quote">"Transforming Technical Curiosity into Practical Capability</span>
+            <i class="fa-solid fa-quote-right marquee-icon"></i>
+            <span class="marquee-separator">•</span>
+            
+            
+            
+            <i class="fa-solid fa-computer marquee-icon"></i>
+            <i class="fa-solid fa-quote-left marquee-icon"></i>
+            <span class="marquee-quote">" From Circuits to Communication – Creating Tomorrow's Technology"</span>
+            <i class="fa-solid fa-quote-right marquee-icon"></i>
+            <span class="marquee-separator">•</span>
+            
+            <i class="fa-solid fa-wifi marquee-icon"></i>
+            <i class="fa-solid fa-quote-left marquee-icon"></i>
+            <span class="marquee-quote">"Empowering Students with Industry-Ready Skills"</span>
+            <i class="fa-solid fa-quote-right marquee-icon"></i>
+            <span class="marquee-separator">•</span>
+            
+            <i class="fa-solid fa-laptop-code marquee-icon"></i>
+            <i class="fa-solid fa-quote-left marquee-icon"></i>
+            <span class="marquee-quote">"Coding the Future, Connecting the World."</span>
+            <i class="fa-solid fa-quote-right marquee-icon"></i>
+            <span class="marquee-separator">•</span>
+            
+            <i class="fa-solid fa-code marquee-icon"></i>
+            <i class="fa-solid fa-quote-left marquee-icon"></i>
+            <span class="marquee-quote">"Innovating Tomorrow's Silicon & Networks Today."</span>
+            <i class="fa-solid fa-quote-right marquee-icon"></i>
+            <span class="marquee-separator">•</span>
+        </div>
+    </marquee>
+</div>
+    <!-- Main Section Tabs -->
+    <main class="main-content">
+        <nav class="interactive-tabs">
+            <button class="tab-btn active" data-tab="overview"><i class="fa-solid fa-book-open"></i> Overview</button>
+            <button class="tab-btn" data-tab="teaching"><i class="fa-solid fa-layer-group"></i> Teaching & Subjects</button>
+            <button class="tab-btn" data-tab="contact"><i class="fa-solid fa-building-user"></i> Office & Contact</button>
+        </nav>
+
+        <!-- TAB 1: Overview -->
+        <section id="overview" class="tab-content active-content fade-in">
+            <div class="info-card 3d-card">
+                <h3><i class="fa-solid fa-atom"></i> Academic Profile</h3>
+                <p>Welcome to my official academic portal. I handle lectures, practical lab sessions, and student project guidance across Electronics & Communication (EC) and Information & Communication Technology (ICT) disciplines.</p>
+                
+                <blockquote class="faculty-quote">
+                    <p><i class="fa-solid fa-quote-left"></i> Engineering education is about transforming technical curiosity into practical capability. <i class="fa-solid fa-quote-right"></i></p>
+                </blockquote>
+
+                <div class="stat-grid">
+                    <div class="stat-box 3d-card">
+                        <i class="fa-solid fa-microchip"></i>
+                        <h4>10+ Years</h4>
+                        <span>Teaching & Lab Experience</span>
+                    </div>
+                    <div class="stat-box 3d-card">
+                        <i class="fa-solid fa-diagram-project"></i>
+                        <h4>50+ Projects</h4>
+                        <span> Guided (IoT & Embedded, Web Technology, Programming Domain)</span>
+                    </div>
+                    <div class="stat-box 3d-card">
+                        <i class="fa-solid fa-building-user"></i>
+                        <h4>Office</h4>
+                        <span>Cabin B 101, First Floor, B Building</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 2: Teaching -->
+        <section id="teaching" class="tab-content fade-in">
+            <div class="info-card 3d-card">
+                <h3><i class="fa-solid fa-laptop-code"></i> Specialized Courses</h3>
+                <div class="course-list">
+                    <div class="course-item hover-slide">
+                        <i class="fa-solid fa-memory"></i>
+                        <div>
+                            <strong>Wireless Communication</strong>
+                            <p>Wireless Sensor Networks,Mobile Communication </p>
+                        </div>
+                    </div>
+                    <div class="course-item hover-slide">
+                        <i class="fa-solid fa-wifi"></i>
+                        <div>
+                            <strong>Embedded Systems & IoT</strong>
+                            <p>ARM Controllers, ESP32, Arduino, Wireless Sensors</p>
+                        </div>
+                    </div>
+                    <div class="course-item hover-slide">
+                        <i class="fa-solid fa-network-wired"></i>
+                        <div>
+                            <strong>Communication Networks</strong>
+                            <p>Computer Network, Signal processing, optical fiber,</p>
+                        </div>
+                    </div>
+                    <div class="course-item hover-slide">
+                        <i class="fa-solid fa-computer"></i>
+                    <div>
+                    <strong>Programming Course</strong>
+                    <p> C, C++, Python Programming, Web Technologies</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 3: Technocrat Simulator -->
+        <section id="simulator" class="tab-content fade-in">
+            <div class="info-card 3d-card simulator-card">
+                <h3><i class="fa-solid fa-gamepad"></i> Technocrat Educator Simulator</h3>
+                <p class="sim-intro">Balance academic quality, NBA accreditation compliance, and technological lab innovation through strategic decisions.</p>
+
+                <!-- Metrics Progress -->
+                <div class="metrics-bar">
+                    <div class="metric">
+                        <span class="metric-label"><i class="fa-solid fa-graduation-cap"></i> Academic Quality</span>
+                        <div class="progress-bg"><div id="metric-quality" class="progress-fill" style="width: 70%;"></div></div>
+                        <span id="score-quality" class="metric-value">70%</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label"><i class="fa-solid fa-award"></i> Accreditation Status</span>
+                        <div class="progress-bg"><div id="metric-accreditation" class="progress-fill" style="width: 65%;"></div></div>
+                        <span id="score-accreditation" class="metric-value">65%</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label"><i class="fa-solid fa-microchip"></i> Lab Innovation</span>
+                        <div class="progress-bg"><div id="metric-innovation" class="progress-fill" style="width: 60%;"></div></div>
+                        <span id="score-innovation" class="metric-value">60%</span>
+                    </div>
+                </div>
+
+                <!-- Scenario Container -->
+                <div id="scenario-box" class="scenario-container">
+                    <div class="scenario-header">
+                        <span id="scenario-number" class="scenario-tag">Decision 1 of 3</span>
+                        <h4 id="scenario-title">Lab Modernization Strategy</h4>
+                    </div>
+                    <p id="scenario-desc" class="scenario-text">Loading simulation...</p>
+                    <div id="choices-container" class="choices-grid"></div>
+                </div>
+
+                <div id="sim-feedback" class="sim-feedback hidden"></div>
+                
+                <div class="sim-controls">
+                    <button class="btn-secondary" onclick="resetSimulator()">
+                        <i class="fa-solid fa-rotate-right"></i> Reset Simulation
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 4: Office & Contact -->
+        <section id="contact" class="tab-content fade-in">
+            <div class="info-card 3d-card">
+                <h3><i class="fa-solid fa-building-user"></i> Office Hours & Location</h3>
+                <div class="contact-details">
+                    <p><i class="fa-solid fa-location-dot"></i> <strong>Office:</strong> Cabin B-101, B Block, ECE Department</p>
+                    <p><i class="fa-solid fa-clock"></i> <strong>Student Meeting Hours:</strong> Monday – Friday | 3:00 PM – 5:00 PM</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FLOATING 3D CHATBOT CONTAINER -->
+    <div class="chat-floating-wrapper">
+        
+        <!-- HOVER BADGE + LAUNCH BUTTON -->
+        <div id="chat-launcher" class="ai-chat-launcher-container" aria-label="Open AI Assistant">
+            <div class="chat-launcher-badge">
+                <span>I am Parth Patel's Chatbot Assistant</span>
+                <div class="badge-arrow"></div>
+            </div>
+
+            <div class="ai-chat-launcher">
+                <div class="ict-3d-core">
+                    <div class="chip-face front"><i class="fa-solid fa-microchip"></i></div>
+                    <div class="chip-face back"><i class="fa-solid fa-network-wired"></i></div>
+                    <div class="tech-ring ring-x"></div>
+                    <div class="tech-ring ring-y"></div>
+                </div>
+                <span class="notification-dot"></span>
+            </div>
+        </div>
+
+        <!-- POPUP CHATBOT WINDOW (FIXED POSITIONING) -->
+        <div id="chat-window" class="chat-window hidden">
+            <div class="chat-header">
+                <div class="bot-info">
+                    <div class="avatar-container">
+                        <i class="fa-solid fa-brain bot-avatar-icon"></i>
+                        <span class="online-indicator"></span>
+                    </div>
+                    <div class="bot-details">
+                        <span class="bot-name">EC-ICT AI Assistant</span>
+                        <span class="bot-status"><i class="fa-solid fa-circle"></i> Active • Parth Patel's AI Bot</span>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <button id="clear-chat" title="Clear Chat"><i class="fa-solid fa-trash-can"></i></button>
+                    <button id="close-chat" title="Close Window"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+
+            
+            <div id="chat-messages" class="chat-messages"></div>
+
+            <div id="typing-indicator" class="typing-indicator hidden">
+                <div class="dots">
+                    <span></span><span></span><span></span>
+                </div>
+                <span class="typing-text">AI is processing...</span>
+            </div>
+
+            <form id="chat-form" class="chat-input-area">
+                <input type="text" id="user-input" placeholder="Ask about EC/ICT subjects, Cabin B-101..." autocomplete="off" required>
+                <button type="submit" id="send-btn" aria-label="Send Message">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Script File -->
+    <script src="script.js"></script>
+</body>
+</html>
