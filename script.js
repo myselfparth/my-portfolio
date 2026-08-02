@@ -1,7 +1,7 @@
 // Knowledge Base Customized for Prof. Parth Patel
 const knowledgeBase = [
     {
-        keywords: ["hello", "hi", "hey", "greetings","HI"],
+        keywords: ["hello", "hi", "hey", "greetings","HI","Good Morning","Good Night","Good Noon","good evening", "namaste", "sup", "yo", "start"],
         response: "Hello! Welcome to Prof. Parth Patel's portal. How can I assist you with EC or ICT engineering queries?"
     },
     {
@@ -27,10 +27,18 @@ const knowledgeBase = [
     {
         keywords: ["project", "lab", "guidance", "projects"],
         response: "Prof. Patel guides projects in IoT Smart Systems, Microcontroller Applications, Web Technologies, Programming and  circuit prototyping."
-    }
+    },
+    {
+        keywords: ["exam", "test", "marks", "result", "doubt", "help", "question", "midsem", "gtu"],
+        response: "For exam doubts, paper reviews, or academic guidance, please meet Prof. Patel during student hours (3:00 PM - 5:00 PM) in Cabin B-101."
+    },
+    {
+        keywords: ["thanks", "thank you", "thx", "great", "awesome", "bye", "goodbye", "see ya", "exit"],
+        response: "You're welcome! Feel free to reach out anytime. Have a great day!"
+},
 ];
 
-const fallbackResponse = "I don't have the exact answer for that yet, but I can help with Prof. Parth Patel's office hours (Cabin B-101), subjects, or project guidance. What would you like to know?";
+const fallbackResponse = "I don't have the exact answer for that yet, but I can help with Prof. Parth Patel's office hours (Cabin B-101), subjects,What would you like to know?";
 
 // DOM Elements
 const chatLauncher = document.getElementById("chat-launcher");
